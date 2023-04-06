@@ -62,7 +62,7 @@ int scan_port(char *ip_address, int port) {
             } else if (select_result == 0) {
 ```
 
-  ## Example of SpeedScan Turbo:
+  # Example of SpeedScan Turbo:
 ![SpeedSacan-Turbo-Replit-Google-Chrome-2023-04-06-12-56-24](https://user-images.githubusercontent.com/90658763/230359068-a03a5258-b613-4472-bbd7-de6da453ece9.gif)
  # Sources:
  ## Stdlib.h:
