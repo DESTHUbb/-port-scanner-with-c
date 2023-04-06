@@ -37,6 +37,14 @@ int scan_port(char *ip_address, int port) {
         return -1;
     }
   ```
+### The connect() function is used to establish a connection between the local socket and the remote socket (in this case, the server). If this function returns a value less than zero, it indicates that the connection failed.
+### This code checks if the error that occurred on the connection is EINPROGRESS, which means that the connection is in progress and has not completed yet. This is because a non-blocking socket is being used, which means that the connect() function may return immediately before the connection is complete.
+``` C
+ // Start a non-blocking connect operation
+    if (connect(socket_desc, (struct sockaddr *)&server, sizeof(server)) < 0) {
+        if (errno == EINPROGRESS) {
+ ```
+  
   ## Example of SpeedScan Turbo:
 ![SpeedSacan-Turbo-Replit-Google-Chrome-2023-04-06-12-56-24](https://user-images.githubusercontent.com/90658763/230359068-a03a5258-b613-4472-bbd7-de6da453ece9.gif)
  # Sources:
