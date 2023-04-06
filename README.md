@@ -79,7 +79,7 @@ int scan_port(char *ip_address, int port) {
  [![<fcntl.h>](https://user-images.githubusercontent.com/90658763/230364888-2d4a42b5-9a85-4050-9edc-3c06430d071e.png)
 ](https://pubs.opengroup.org/onlinepubs/000095399/basedefs/fcntl.h.html)
 ## <errno.h>:
- [![Stdlib.h](https://user-images.githubusercontent.com/90658763/230365415-253a4a3a-ac2e-4580-b420-c3b2348f7145.png)](https://www.linuxadictos.com/errno-h-un-poco-de-historia-unixlinux.html)
+ [![<errno.h>](https://user-images.githubusercontent.com/90658763/230365415-253a4a3a-ac2e-4580-b420-c3b2348f7145.png)](https://www.linuxadictos.com/errno-h-un-poco-de-historia-unixlinux.html)
 
 
 
