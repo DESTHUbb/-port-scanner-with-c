@@ -81,6 +81,6 @@ int scan_port(char *ip_address, int port) {
 ## <errno.h>:
  [![<errno.h>](https://user-images.githubusercontent.com/90658763/230365415-253a4a3a-ac2e-4580-b420-c3b2348f7145.png)](https://www.linuxadictos.com/errno-h-un-poco-de-historia-unixlinux.html)
 ## <netinet/tcp.h>:
- [![Stdlib.h](https://user-images.githubusercontent.com/90658763/230366318-268d9388-514f-49f3-a1d4-5c2d27c5f26f.png)](https://pubs.opengroup.org/onlinepubs/009695399/basedefs/netinet/tcp.h.html)
+ [![<netinet/tcp.h>](https://user-images.githubusercontent.com/90658763/230366318-268d9388-514f-49f3-a1d4-5c2d27c5f26f.png)](https://pubs.opengroup.org/onlinepubs/009695399/basedefs/netinet/tcp.h.html)
 
 
