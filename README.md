@@ -17,5 +17,9 @@ int scan_port(char *ip_address, int port) {
 # Result:
 ![image](https://user-images.githubusercontent.com/90658763/230356458-29a23413-73d7-4815-8f52-bb7ae090d8f6.png)
 
+# SpeedScaner Turbo
+## One way to make the above code scan ports faster is to use concurrency, that is, run multiple port checks at the same time instead of waiting for each check to complete before starting the next. One way to achieve this in C is through the use of threads.
+
+## Example of the turbo version:
 
 
