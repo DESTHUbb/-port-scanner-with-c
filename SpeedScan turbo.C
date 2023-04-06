@@ -103,7 +103,7 @@ for (port = port_start; port <= port_end; port++) {
     if (scan_port(ip_address, port)) {
         printf("Port %d is open\n", port);
     } else {
-        printf("Puerto %d is closed\n", port);
+        printf("Port %d is closed\n", port);
     }
 }
 
