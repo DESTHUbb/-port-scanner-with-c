@@ -44,7 +44,24 @@ int scan_port(char *ip_address, int port) {
     if (connect(socket_desc, (struct sockaddr *)&server, sizeof(server)) < 0) {
         if (errno == EINPROGRESS) {
  ```
-  
+### These codes are used to wait for a socket connection to complete in non-blocking mode using the select() function.
+### First, an empty file descriptor set (fd_set) called write_fds is created and the socket descriptor (socket_desc) is added to the set using the FD_SET() function. Then, a timeout of 100ms is set using the timeval structure, which is used to specify the timeout in the select() function.
+``` C
+// The connection is in progress, wait for it to complete or timeout
+            fd_set write_fds;
+            struct timeval timeout;
+            FD_ZERO(&write_fds);
+            FD_SET(socket_desc, &write_fds);
+            timeout.tv_sec = 0;
+            timeout.tv_usec = 100000; // 100ms timeout
+            int select_result = select(socket_desc + 1, NULL, &write_fds, NULL, &timeout);
+            if (select_result == -1) {
+                printf("Failed to select socket for non-blocking connect");
+                close(socket_desc);
+                return -1;
+            } else if (select_result == 0) {
+```
+
   ## Example of SpeedScan Turbo:
 ![SpeedSacan-Turbo-Replit-Google-Chrome-2023-04-06-12-56-24](https://user-images.githubusercontent.com/90658763/230359068-a03a5258-b613-4472-bbd7-de6da453ece9.gif)
  # Sources:
