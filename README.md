@@ -37,7 +37,9 @@ int scan_port(char *ip_address, int port) {
         return -1;
     }
   ```
+  ## Example of the turbo version:
+![SpeedSacan-Turbo-Replit-Google-Chrome-2023-04-06-12-56-24](https://user-images.githubusercontent.com/90658763/230359068-a03a5258-b613-4472-bbd7-de6da453ece9.gif)
 
-## Example of the turbo version:
+
 
 
