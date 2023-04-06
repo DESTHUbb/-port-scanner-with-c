@@ -20,6 +20,10 @@ int scan_port(char *ip_address, int port) {
 # SpeedScaner Turbo
 ## One way to make the above code scan ports faster is to use concurrency, that is, run multiple port checks at the same time instead of waiting for each check to complete before starting the next. One way to achieve this in C is through the use of threads.
 
+## improved features
+
+### Setting the socket to non-blocking mode allows the program to continue running while it waits for the server's response to connect to the port. This means it won't hang while you wait, which can improve program performance when scanning multiple ports or scanning ports on multiple IP addresses. Additionally, this can also help prevent the program from crashing if the server is down.
+
 ## Example of the turbo version:
 
 
