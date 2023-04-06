@@ -42,6 +42,8 @@ int scan_port(char *ip_address, int port) {
  # Sources:
  ## Stdlib.h:
  [![Stdlib.h](https://user-images.githubusercontent.com/90658763/230360437-bb4d1f84-8c0f-4641-8bc6-89882c644425.png)](https://es.wikipedia.org/wiki/Stdlib.h)
+ ## <string.h>:
+  [![string.h](https://user-images.githubusercontent.com/90658763/230360901-e9363243-d973-4c12-bd5f-81b72f7c7a6e.png)](https://es.wikipedia.org/wiki/Stdlib.h)
 
 
 
